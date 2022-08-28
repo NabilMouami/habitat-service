@@ -1,0 +1,313 @@
+.details {
+  margin: 20px;
+  background-color: #fff;
+  display: flex;
+}
+.details h3 {
+  margin-left: 70px;
+  color: #e94560;
+}
+.details .det-flex {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.details .detail-flex {
+  display: flex;
+  justify-content: space-between;
+}
+.details .det-flex img {
+  margin: 20px 30px;
+  object-fit: cover;
+  width: 270px;
+  height: 300px;
+}
+.details .det-flex .description {
+  margin-top: 70px;
+}
+.details .det-flex .description p {
+  width: 70%;
+  font-family: "Gill Sans", sans-serif;
+  line-height: 30px;
+  font-weight: 600;
+  margin-left: 70px;
+}
+
+.flex-desc {
+  margin-left: 70px;
+  margin-top: 30px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(15rem, 1fr));
+  gap: 10px;
+}
+.flex-desc .span-descr {
+  color: #130f40;
+  font-size: 28px;
+  font-weight: 700;
+}
+.flex-desc p {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.interes {
+  background-color: #fff;
+  width: 98%;
+  margin: 20px 10px;
+}
+.interes-para {
+  margin-left: 40px;
+  margin-top: 30px;
+  font-weight: 700;
+  font-family: "Courier New", Courier, monospace;
+}
+
+/* breweries styles */
+.breweries {
+  padding: 2rem;
+  background-color: #fff;
+  display: flex;
+}
+
+.breweries > ul {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 1rem;
+}
+
+.breweries > ul > li {
+  border: 1px solid #e2e2e2;
+  border-radius: 0.5rem;
+}
+
+.breweries > ul > li > figure {
+  max-height: 220px;
+  overflow: hidden;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+  position: relative;
+}
+
+.breweries > ul > li > figure > img {
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption {
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+}
+
+.breweries > ul > li > figure > figcaption > h3 {
+  color: white;
+  padding: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.breweries > ul > li > p {
+  font-size: 1rem;
+  line-height: 1.5;
+  padding: 1rem 0.75rem;
+  color: #666666;
+}
+
+.breweries > ul > li > a {
+  background: #e94560;
+  padding: 13px 40px;
+  margin: -20px 30px;
+  font-weight: bold;
+  color: #fff;
+  border-radius: 5px;
+}
+
+/* Examplle Utilisation produits */
+.flex-ex {
+  display: flex;
+}
+
+.left-ex,
+.right-ex {
+  width: 50%;
+}
+
+.grid-ex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 30px;
+}
+.center-ex {
+  text-align: center;
+}
+.top-ex {
+  margin-top: 10%;
+}
+
+.container-ex {
+  max-width: 85%;
+  margin: 0px;
+}
+
+.portfolio-ex .left-ex {
+  width: 40%;
+  margin: 20px;
+}
+
+.portfolio-ex .right-ex {
+  width: 70%;
+  margin: 20px;
+  position: relative;
+}
+
+.portfolio-ex .right-ex .img-ex {
+  /*  width: 340px;
+    height: 340px;*/
+  background: #d0d5db;
+  overflow: hidden;
+}
+
+.portfolio-ex .box-ex {
+  position: relative;
+  width: 340px;
+  height: 340px;
+}
+
+.portfolio-ex .image-ex {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.portfolio-ex .middle-ex {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-ex .box-ex:hover .image-ex {
+  transform: scale(1.2);
+}
+
+.portfolio-ex .box-ex:hover .middle-ex {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.portfolio-ex .right-ex .text-ex {
+  background: rgba(0, 0, 0, 0.2);
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  width: 340px;
+  height: 340px;
+}
+
+.portfolio-ex .right-ex .text-ex h4 {
+  font-weight: 300;
+  margin-bottom: 30px;
+}
+
+.portfolio-ex .right-ex .text-ex h3 {
+  font-weight: 300;
+  font-size: 25px;
+}
+
+.portfolio-ex .left-ex .text-ex {
+  margin-top: 40%;
+}
+
+@media only screen and (min-width: 340px) and (max-width: 500px) {
+  .details {
+    display: flex;
+    width: 100%;
+    margin-top: 80px;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    font-size: 10px;
+    padding: 15px;
+    box-sizing: border-box;
+  }
+  .details h3 {
+    margin-top: 20px;
+    margin-left: 10px;
+  }
+  .description p {
+    margin-top: 10px;
+    margin-left: 0px;
+    font-size: 12px;
+  }
+  .description h3 {
+    font-size: 12px;
+    margin-top: 130px;
+    margin-left: 20px;
+  }
+  .detail-flex {
+    width: 40%;
+    margin-left: 0;
+  }
+  .det-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 85%;
+    position: relative;
+    margin-left: 0;
+  }
+  .det-flex img {
+    position: absolute;
+    max-width: 180px;
+    max-height: 150px;
+    margin-bottom: 25px;
+    left: 0;
+  }
+
+  .details .det-flex .description p {
+    margin-left: 10px;
+  }
+  .information-comp {
+    font-size: 15px;
+    margin-left: 10px;
+  }
+  .flex-desc {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin-left: 10px;
+    margin-bottom: 0px;
+  }
+  .flex-desc .span-descr {
+    color: #130f40;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  
+  .container-ex {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-ex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .breweries {
+    display: flex;
+    flex-direction: column;
+  }
+  .right-ex {
+    width: 150%;
+  }
+  .left-ex {
+    min-width: 150%;
+  }
+  .portfolio-ex{
+    margin-top: 0px;
+  }
+}

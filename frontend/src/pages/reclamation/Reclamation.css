@@ -1,0 +1,38 @@
+.reclamation {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+.reclamation .rec-left{
+    flex: 1 1 250px;
+    margin: 20px 30px;
+}
+.reclamation .rec-left p{
+    line-height: 30px;
+    color: rgba(25, 3, 3, 0.803);
+    font-size: 18px;
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+.reclamation .rec-right{
+    flex: 1 1 250px;
+    padding: 0.8rem;
+    border: var(--border);
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+}
+
+.rec-right form .box{
+    margin: .7rem 0;
+    width: 90%;
+    border: var(--border);
+    padding: 1rem;
+    font-size: 0.9rem;
+    color: var(--black);
+    border-radius: .5rem;
+}
+.rec-right form textarea{
+    height: 15rem;
+    resize: none;
+}
