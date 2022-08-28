@@ -1,0 +1,48 @@
+const Bois = [
+  {
+    id: 1,
+    type: "075/16 OS",
+    marque: "AOE",
+    quantite: 258,
+    long: "V",
+    ml: 846.9,
+    fournisseur: "CAMAB",
+  },
+  {
+    id: 2,
+    type: "100/16 OS-V",
+    marque: "ES",
+    quantite: 439,
+    long: "4.50",
+    ml: 1975.5,
+    fournisseur: "STENVALLS",
+  },
+  {
+    id: 3,
+    type: "100/19 OS",
+    marque: "KTS",
+    quantite: 348,
+    long: "V",
+    ml: 1277.4,
+    fournisseur: "",
+  },
+  {
+    id: 4,
+    type: "150/38 OS",
+    marque: "Sokna",
+    quantite: 57,
+    long: "2.40",
+    ml: 136.8,
+    fournisseur: "GOSTA",
+  },
+  {
+    id: 5,
+    type: "150/63 OS",
+    marque: "AV",
+    quantite: 84,
+    long: "3.60",
+    ml: 302.4,
+    fournisseur: "CAMAB",
+  },
+];
+export default Bois;
