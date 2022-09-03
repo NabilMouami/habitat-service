@@ -1,0 +1,91 @@
+.BootstrapMulti .slick-arrow.slick-prev,
+.BootstrapMulti .slick-arrow.slick-next {
+  background: #8ecb2f;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  border-radius: 5px;
+}
+.slick-prev::before,
+.slick-next::before {
+  display: none;
+}
+.BootstrapMulti .slick-arrow.slick-prev {
+  left: -50px;
+}
+.BootstrapMulti .slick-arrow.slick-next {
+  right: -50px;
+}
+button {
+  outline: none;
+  border: none;
+  color: #7ac400;
+  background: white;
+  border-radius: 20px;
+  border: 1px solid #7ac400;
+  font-size: 11px;
+  font-weight: 500;
+  padding: 7px 14px;
+  margin: 10px 0;
+  text-transform: uppercase;
+}
+button:hover {
+  background: #7ac400;
+  color: white;
+  cursor: pointer;
+}
+.BootstrapMulti .slick-dots li button:before {
+  font-size: 15px;
+}
+.card-intersted {
+  display: inline-block;
+  box-sizing: border-box;
+  text-align: center;
+  margin: 20px;
+  padding: 0 10px;
+  width: 220px;
+  box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+  border-radius: 5;
+  position: relative;
+}
+.card-intersted img {
+  width: 100%;
+  height: 120px;
+  object-fit: contain;
+  margin-bottom: 10px;
+  position: absolute;
+}
+.card-intersted p {
+  font-size: 18px;
+  padding: 5px 0;
+  color: gray;
+  font-weight: 400;
+  text-align: center;
+}
+.card-intersted span {
+  font-size: 18px;
+  padding: 5px 0;
+  color: gray;
+  font-weight: 400;
+}
+@media only screen and (min-width: 340px) and (max-width: 500px) {
+  .card-interested {
+    line-height: 10px;
+    font-size: 10px;
+    box-sizing: border-box;
+    margin-top: 5rem;
+  font-weight: 400;
+
+    margin-bottom: 30px;
+    max-height: 300px;
+    height: auto;
+  }
+  .card-intersted span {
+    font-size: 10px;
+  font-weight: 400;
+
+  }
+}

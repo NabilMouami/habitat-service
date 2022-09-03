@@ -1,0 +1,114 @@
+article .prod {
+  width: 100%;
+  margin-left: 10px;
+  margin-bottom: 30px;
+}
+
+ .grid-prod {
+  height: 50%;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(25rem, 1fr));
+  gap: 10px;
+}
+.box-pr {
+  position: relative;
+  transition: 0.5s;
+  padding: 10px;
+  height: 200px;
+  max-width: 300px;
+}
+.box-pr img {
+  max-width: 90%;
+  height: 200px;
+  transition: transform 2s;
+  background-position: center;
+  object-fit: cover;
+}
+.box-pr:hover img {
+  transform: scale(1.1);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 2;
+}
+.overlay::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primaryColor);
+  opacity: 0;
+  transition: 0.5s;
+  z-index: -1;
+}
+ .box-pr:hover .overlay::after,
+.box-pr:hover .overlay {
+  opacity: 1;
+}
+
+.catButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 40px 0;
+}
+.catButton button {
+  text-transform: capitalize;
+  margin-right: 20px;
+}
+.primaryBtn {
+  background: none;
+  border: 2px solid  #e0a80d;
+}
+
+
+@media only screen and (min-width: 340px) and (max-width: 500px) {
+  .prod{
+    margin-top: 100px;
+    width: 100%;
+  }
+  .prod .catButton{
+    margin: 0 0;
+  }
+  .catButton button {
+    margin-right: 2px;
+    width: 60px;
+    box-sizing: border-box;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+  .grid-prod{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(5rem, 1fr));
+    gap: 10px;
+  
+  }
+  .overlay{
+    opacity: 1;
+  }
+  .overlay h3{
+    font-size: 18px;
+
+  }
+}

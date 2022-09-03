@@ -1,0 +1,52 @@
+.equipes h1{
+    font-size: 40px;
+    margin-top: 20px;
+    color: #e74c3c;
+    text-align: center;
+}
+.con{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.con .con-card{
+    height: 500px;
+    width: 290px;
+    margin: 20px;
+    box-shadow: 0 3px 5px #000;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    background-color: #222;
+}
+.con-card .bg-image img{
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  clip-path: polygon(0 0,100% 0%,100% 70%,45% 100%,0 70%);
+}
+.con-card .pic img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    border: 10px solid #222;
+    margin-top: -90%;
+    position: relative;
+}
+.con-card .info h3{
+  color: #f0f0f0;
+  font-size: 20px;
+  padding: 10px 0;
+}
+.con-card .pic p{
+    font-size: 13px;
+    padding: 10px 20px;
+    color: #fff;
+    font-family: sans-serif;
+    font-weight: 700;
+    color: #666;
+
+}
+.pic h3{
+    color: #f0f0f0;
+}

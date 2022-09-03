@@ -1,0 +1,66 @@
+.main-testimonials-wrapper {
+    font-family: "Patrick Hand", cursive;
+    padding-top: 3rem;
+    margin-bottom: 60px;
+  }
+  
+  .swiper-container {
+    width: 100%;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+  }
+  
+  .swiper-slide {
+    display: grid;
+    text-align: center;
+    padding: 0.5rem 1rem;
+    background: rgb(240, 240, 240);
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-bottom: 60px;
+
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 6rem;
+    justify-self: center;
+    border-radius: 50%;
+    margin-top: 0.6rem;
+  }
+  .mySwiper{
+    margin-bottom: 30px;
+  }
+  
+ .main-testimonials-wrapper P {
+    color: #141823;
+  }
+  .swiper-button-prev{
+    color: #000;
+    margin-left: 120px;
+  }
+  .swiper-button-next{
+    color: #000;
+    margin-right: 120px;
+  }
+
+  @media only screen and (min-width: 340px) and (max-width: 500px) {
+    .swiper-slide{
+      max-width: 50%;
+    }
+    .swiper-button-prev{
+      font-size: 4px;
+      max-width: .2rem;
+      max-height: .2rem;
+      margin-left: 2px;
+    }
+    .swiper-button-next{
+      font-size: 4px;
+      max-width: .2rem;
+      max-height: .2rem;
+
+      margin-right: 2px;
+
+    }
+  }
